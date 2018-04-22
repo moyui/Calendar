@@ -1,0 +1,135 @@
+/*css重置*/
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, th, tr, img, div, dl, dt, dd, input, label, figure, button {
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select, button {
+  font-size: 0;
+}
+
+/*自适应*/
+input, textarea, img, video, object {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+/*firefox设置*/
+img {  
+  display: inline-block;
+}
+
+body {
+  font-family: "Arial", "Microsoft YaHei", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+}
+
+h3, h4, h5 {
+  font-weight: normal;
+}
+
+input, select, textarea, button {
+  background: none;
+  /*解决输入框兼容问题*/
+  outline: none;
+  /*聚焦时样式*/
+  border: none;
+  /*盒子模型*/
+  vertical-align: middle
+  /*对不齐的问题*/
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* css重置完成 */
+
+/* 正文开始 */
+
+.calendar {
+    width: 10.8rem;
+    height: 11.22rem;
+}
+
+.calendarHead {
+    width: 10.8rem;
+    height: 1.49rem;
+    color: #FFFFFF;
+}
+
+.headMYD {
+    position: relative;
+}
+
+.headMonth {
+    position: absolute;
+    line-height: 1.49rem;
+    left: 0.5rem;
+}
+
+.headYear {
+    left: 2.1rem;
+    position: absolute;
+    line-height: 1.15rem;
+}
+
+.headDate {
+    left: 2.1rem;
+    position: absolute;
+    line-height: 1.85rem;
+}
+
+.calendarTitle {
+    width: 10.8rem;
+    height: 0.82rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-collapse:collapse;    
+}
+
+.calendarShow {
+    width: 10.8rem;
+    height: 8.91rem;
+    text-align: center;
+    font-family: "SimHei";
+    border-collapse:collapse;
+}
+
+.calendar-body-wrap {
+    display: flex;
+    overflow: hidden;
+    width: calc(3 * 100%);
+}
+
+.calendar-body-wrap table {
+    display: inline-block;
+    width: 100%;
+}
+
+.calendar-normal-name {
+    color: #000000;
+}
+
+.calendar-grey-name {
+    color: #999999;
+}
